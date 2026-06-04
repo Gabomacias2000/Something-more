@@ -10,12 +10,33 @@ body {
   font-family: Arial, sans-serif;
 }
 
-.page {
-  max-width: 1200px;
-  margin: 30px auto;
-  background: #fffaf6;
-  overflow: hidden;
+.top-bar {
+  background-color: #f4678a;
+  color: white;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 14px 60px;
+  font-weight: 600;
 }
+
+.top-left {
+  display: flex;
+  gap: 12px;
+}
+
+.top-left a {
+  color: white;
+  text-decoration: none;
+}
+
+.top-right {
+  font-weight: bold;
+}
+
+
 
 
 
@@ -28,14 +49,12 @@ body {
 .hero {
   position: relative;
   min-height: 650px;
-  background-color: #f6fbff;
   background-image: url("");
   background-size: 180px;
   background-repeat: repeat;
   display: grid;
    grid-template-columns: 1fr 420px;
   padding: 90px 8% 170px;
-
   background-image:
     linear-gradient(
       rgba(255,255,255,0.88),
@@ -144,6 +163,14 @@ h2 {
   padding: 110px 80px;
   align-items: center;
   background-color: white;
+   background-image:
+    linear-gradient(
+      rgba(255,255,255,0.88),
+      rgba(255,255,255,0.88)
+    ),
+    url("https://t3.ftcdn.net/jpg/07/33/48/94/360_F_733489477_4LIKeyYDfs89MhNmCkaJ8gVUik2fjIov.jpg");  
+  background-repeat: repeat;
+  background-size: 220px;  
 }
 
 .section-title {
@@ -179,6 +206,14 @@ h2 {
   padding: 90px 90px;
   background-color: #fff5ef;
   text-align: center;
+  background-image:
+    linear-gradient(
+      rgba(255, 245, 239, 0.92),
+      rgba(255, 245, 239, 0.92)
+    ),
+    url("https://t3.ftcdn.net/jpg/07/33/48/94/360_F_733489477_4LIKeyYDfs89MhNmCkaJ8gVUik2fjIov.jpg");  
+  background-repeat: repeat;
+  background-size: 220px;  
 }
 
 .menu-tabs {
@@ -233,10 +268,17 @@ h2 {
 .about {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  background-color: white;
   align-items: center;
   padding: 100px 80px;
   gap: 70px;
+  background-image:
+    linear-gradient(
+      rgba(255,255,255,0.88),
+      rgba(255,255,255,0.88)
+    ),
+    url("https://t3.ftcdn.net/jpg/07/33/48/94/360_F_733489477_4LIKeyYDfs89MhNmCkaJ8gVUik2fjIov.jpg");  
+  background-repeat: repeat;
+  background-size: 220px;  
 }
 
 .about-text p {
@@ -293,5 +335,111 @@ h2 {
   .dinner-menu,
   .about {
     padding: 60px 25px;
+  }
+}
+
+.reservation-section {
+  background-color: #fff5ef;
+  padding: 100px 6%;
+}
+
+.reservation-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 1200px;
+  margin: 0 auto;
+  border-radius: 28px;
+  overflow: hidden;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.14);
+}
+
+.reservation-form-box {
+  background-color: #1d5d96;
+  color: white;
+  padding: 40px 50px;
+}
+
+.reservation-form-box .eyebrow {
+  color: #e99673;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 0.75rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.reservation-form-box h2 {
+  color: white;
+  font-family: Georgia, serif;
+  font-size: 2.2rem;
+  margin-bottom: 45px;
+}
+
+.reservation-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+
+.reservation-form input,
+.reservation-form select {
+  width: 100%;
+  padding: 16px 18px;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  font-size: 1rem;
+  outline: none;
+}
+
+.reservation-form input:focus,
+.reservation-form select:focus {
+  border-color: #e99673;
+}
+
+.reservation-form button {
+  margin-top: 10px;
+  padding: 17px 32px;
+  border: none;
+  border-radius: 10px;
+  background-color: #e99673;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.reservation-form button:hover {
+  background-color: #d97d5c;
+}
+
+.map-box iframe {
+  width: 100%;
+  height: 100%;
+  min-height: 620px;
+  border: 0;
+  display: block;
+}
+
+@media (max-width: 850px) {
+  .reservation-content {
+    grid-template-columns: 1fr;
+  }
+
+  .reservation-form-box {
+    padding: 50px 25px;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+
+  .map-box iframe {
+    min-height: 350px;
   }
 }

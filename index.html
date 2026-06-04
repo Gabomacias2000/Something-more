@@ -8,8 +8,19 @@
 </head>
 <body>
 
-  <main class="page">
+    <div class="top-bar">
+  <div class="top-left">
+    <span>780.852.3850</span>
+    <span>|</span>
+    <span>621 Patricia St. Jasper, Alberta</span>
+    <span>|</span>
+    <a href="#reservation">Book a Table</a>
+  </div>
 
+  <div class="top-right">
+    <span>11am - 10pm</span>
+  </div>
+</div>
     <section class="hero">
       <div class="hero-content">
         <p class="eyebrow">Authentic Greek Food in Jasper</p>
@@ -57,7 +68,7 @@
       </div>
 
       <div class="dish-card">
-        <img src="./images/steak.jpg" alt="Steak dinner" />
+        <img src="https://lh3.googleusercontent.com/gps-cs-s/APNQkAFeqOnPLRLm1hXa4BuWOfiHswF7Dyo9PK8M5zUKe8SGDU33SF9DAJh1cwlYavKjPgrjb2f6wIiHuCm0tVRPKwjsscveL-M8_37xpbvXQw2_FkhrGosMW2eFESSCdqwSJL0Y1DQLJ_XzmA0S=s680-w680-h510-rw" alt="Steak dinner" />
         <h3>Signature Steaks</h3>
         <p>
           Classic steakhouse flavor with a Mediterranean touch.
@@ -110,10 +121,77 @@
         <a href="#reservation" class="learn-btn">Reserve Now</a>
       </div>
 
-      <img src="./images/patio.jpg" alt="Restaurant patio with mountain view" />
+      <img src="./images/baklava.jpg" alt="Restaurant patio with mountain view" />
     </section>
 
-  </main>
+<section id="reservation" class="reservation-section">
+  <div class="reservation-content">
+    <div class="reservation-form-box">
+      <p class="eyebrow">Book Your Table</p>
+      <h2>Make a Reservation</h2>
 
+      <form class="reservation-form">
+        <div class="form-row">
+          <input type="text" placeholder="First Name" required>
+          <input type="text" placeholder="Last Name" required>
+        </div>
+
+        <input type="email" placeholder="Email Address" required>
+        <input type="tel" placeholder="Phone Number" required>
+
+        <div class="form-row">
+          <input type="date" id="reservation-date" required>
+          <select id="reservation-time">
+          </select>
+        </div>
+
+        <select required>
+          <option value="">Number of Guests</option>
+          <option>1 person</option>
+          <option>2 people</option>
+          <option>3 people</option>
+          <option>4 people</option>
+          <option>5 people</option>
+          <option>6 person</option>
+          <option>7 people</option>
+          <option>8 people</option>
+          <option>9 people</option>
+          <option>10 people</option>
+          <option>11 person</option>
+          <option>12 people</option>
+          <option>13 people</option>
+          <option>14 people</option>
+          <option>15 people</option>
+          <option>16 person</option>
+          <option>17 people</option>
+          <option>18 people</option>
+          <option>19 people</option>
+          <option>20 people</option>
+          <option>21 person</option>
+          <option>22 people</option>
+          <option>23 people</option>
+          <option>24 people</option>
+          <option>25 people</option>
+          <option>26 person</option>
+          <option>27 people</option>
+          <option>28 people</option>
+          <option>29 people</option>
+          <option>30 people</option>
+        </select>
+
+        <button type="submit">Book a Table</button>
+      </form>
+    </div>
+
+    <div class="map-box">
+      <iframe
+        src="https://www.google.com/maps?q=621%20Patricia%20Street%20Jasper%20Alberta&output=embed"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+  </div>
+</section>
+<script src="script.js"></script>
 </body>
 </html>
